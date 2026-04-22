@@ -1,0 +1,118 @@
+/* ===== Community Garden System - Custom Styles ===== */
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(rgba(15,66,41,0.85), rgba(15,66,41,0.85)), url('../img/carousel-1.jpg') center/cover no-repeat;
+    padding: 60px 0;
+}
+.page-header h1 { color: #fff; font-size: 2.5rem; }
+.page-header .breadcrumb-item, .page-header .breadcrumb-item a { color: #E8F5E9; }
+.page-header .breadcrumb-item.active { color: #7BC47F; }
+.page-header .breadcrumb-item+.breadcrumb-item::before { color: #7BC47F; }
+
+/* Function Cards */
+.fn-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.08);
+    transition: transform .3s, box-shadow .3s;
+    overflow: hidden;
+}
+.fn-card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(52,142,56,.18); }
+.fn-card .fn-icon {
+    width: 72px; height: 72px;
+    background: var(--light);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.8rem; color: var(--primary);
+}
+.fn-card .card-header {
+    background: var(--primary); color: #fff;
+    font-weight: 600; border: none; padding: 14px 20px;
+}
+.fn-card .badge-fn {
+    background: var(--light); color: var(--dark);
+    font-size: .75rem; padding: 4px 10px; border-radius: 20px;
+    display: inline-block; margin-bottom: .5rem;
+}
+
+/* Status badges */
+.status-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 4px 12px; border-radius: 20px; font-size:.8rem; font-weight:500;
+}
+.status-active { background:#d4edda; color:#155724; }
+.status-pending { background:#fff3cd; color:#856404; }
+.status-expired { background:#f8d7da; color:#721c24; }
+.status-repair  { background:#cce5ff; color:#004085; }
+
+/* Tables */
+.table-garden thead { background: var(--primary); color:#fff; }
+.table-garden tbody tr:hover { background: var(--light); }
+
+/* Form styling */
+.form-garden .form-control, .form-garden .form-select {
+    border: 1.5px solid #d0e8d2; border-radius: 8px; padding: 10px 14px;
+}
+.form-garden .form-control:focus, .form-garden .form-select:focus {
+    border-color: var(--primary); box-shadow: 0 0 0 3px rgba(52,142,56,.15);
+}
+.form-garden label { font-weight: 600; color: var(--dark); margin-bottom: 4px; }
+
+/* Map placeholder */
+.map-placeholder {
+    background: #e8f5e9; border: 2px dashed var(--primary);
+    border-radius: 12px; min-height: 320px;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column; color: var(--primary);
+}
+.map-placeholder i { font-size: 3rem; margin-bottom: 1rem; }
+
+/* Progress bars */
+.progress-garden .progress-bar { background: var(--primary); }
+
+/* Timeline */
+.timeline { position: relative; padding-left: 32px; }
+.timeline::before {
+    content: ''; position: absolute; left: 12px; top:0; bottom:0;
+    width: 2px; background: var(--light);
+}
+.timeline-item { position: relative; margin-bottom: 24px; }
+.timeline-item::before {
+    content: ''; position: absolute; left: -26px; top: 6px;
+    width: 12px; height: 12px; background: var(--primary); border-radius: 50%;
+}
+
+/* Alert boxes */
+.alert-garden { border-left: 4px solid var(--primary); border-radius: 8px; background: var(--light); }
+.alert-danger-garden { border-left: 4px solid #dc3545; background: #fff5f5; }
+.alert-warning-garden { border-left: 4px solid #ffc107; background: #fffdf0; }
+
+/* Sidebar navigation */
+.fn-sidebar .list-group-item {
+    border: none; border-radius: 8px !important; margin-bottom: 4px;
+    transition: background .2s;
+}
+.fn-sidebar .list-group-item:hover, .fn-sidebar .list-group-item.active {
+    background: var(--primary); color: #fff;
+}
+.fn-sidebar .list-group-item i { width: 22px; }
+
+/* Stat cards */
+.stat-card {
+    border-radius: 12px; padding: 24px; text-align: center;
+    border: none; box-shadow: 0 2px 12px rgba(0,0,0,.07);
+}
+.stat-card .stat-number { font-size: 2.2rem; font-weight: 700; color: var(--primary); }
+.stat-card .stat-label { color: #666; font-size: .9rem; margin: 0; }
+
+/* Section divider */
+.section-divider { border: none; height: 3px; background: var(--light); margin: 2rem 0; }
+
+/* Pill tabs */
+.nav-pills-garden .nav-link { color: var(--dark); border-radius: 20px; padding: 8px 20px; }
+.nav-pills-garden .nav-link.active { background: var(--primary); color: #fff; }
+
+/* Responsive tweaks */
+@media(max-width:768px) { .fn-card .fn-icon { width:56px; height:56px; font-size:1.4rem; } }
