@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Community Garden System</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/garden-custom.css" rel="stylesheet">
+</head>
+<body>
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width:3rem;height:3rem;"></div>
+    </div>
+
+    <!-- Topbar -->
+    <div class="container-fluid bg-dark text-light px-0 py-2">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4"><span class="fa fa-phone-alt me-2"></span><span>+012 345 6789</span></div>
+                <div class="h-100 d-inline-flex align-items-center"><span class="far fa-envelope me-2"></span><span>info@gardensystem.com</span></div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <span>Follow Us:</span>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0 text-primary"><i class="fas fa-leaf me-2"></i>GardenSystem</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Land & Allotment</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="plot-mapping.html" class="dropdown-item">1. Geospatial Plot Mapping</a>
+                        <a href="rental-billing.html" class="dropdown-item">2. Tiered Rental Billing</a>
+                        <a href="soil-health.html" class="dropdown-item">3. Soil Health Tracker</a>
+                        <a href="plot-waitlist.html" class="dropdown-item">4. Plot Waitlist & Priority</a>
+                        <a href="lease-renewal.html" class="dropdown-item">7. Lease Renewal & Eviction</a>
+                        <a href="pest-alert.html" class="dropdown-item">8. Pest & Disease Alert</a>
+                        <a href="compliance-audit.html" class="dropdown-item">9. Compliance Audit</a>
+                        <a href="compost-tracker.html" class="dropdown-item">10. Compost Contribution</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Seed Bank & Tools</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="seed-viability.html" class="dropdown-item">12. Seed Viability Tracker</a>
+                        <a href="tool-maintenance.html" class="dropdown-item">14. Tool Maintenance</a>
+                        <a href="maintenance-trigger.html" class="dropdown-item">15. Usage-Based Trigger</a>
+                        <a href="resource-conflict.html" class="dropdown-item">16. Resource Conflict Resolver</a>
+                        <a href="tool-damage.html" class="dropdown-item">17. Tool Damage Liability</a>
+                        <a href="inventory-monitor.html" class="dropdown-item">19. Consumable Inventory</a>
+                        <a href="media-linkage.html" class="dropdown-item">21. Instructional Media</a>
+                        <a href="late-return.html" class="dropdown-item">22. Late Return Penalty</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Volunteer & Ops</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="task-weighting.html" class="dropdown-item">23. Task Weighting</a>
+                        <a href="service-hours.html" class="dropdown-item">25. Service Hour Tracker</a>
+                        <a href="shift-swap.html" class="dropdown-item">26. Shift Substitution</a>
+                        <a href="emergency-broadcast.html" class="dropdown-item">27. Emergency Broadcast</a>
+                        <a href="fund-voting.html" class="dropdown-item">28. Fund Allocation Voting</a>
+                        <a href="security-log.html" class="dropdown-item">29. Security Access Log</a>
+                        <a href="incident-reporting.html" class="dropdown-item">31. Incident Reporting</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Marketplace</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="flash-trade.html" class="dropdown-item">33. Flash Trade</a>
+                        <a href="gift-economy.html" class="dropdown-item">34. Gift-Economy Credits</a>
+                        <a href="allergy-guard.html" class="dropdown-item">36. Allergy Guard</a>
+                        <a href="p2p-advice.html" class="dropdown-item">37. P2P Advice Exchange</a>
+                        <a href="quality-rating.html" class="dropdown-item">38. Quality Verification</a>
+                        <a href="rbac.html" class="dropdown-item">40. Role-Based Access</a>
+                        <a href="audit-trail.html" class="dropdown-item">41. System Audit Trail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Garden">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h1 class="display-2 text-white mb-4 animated slideInDown">Integrated Community Garden & Allotment Manager</h1>
+                                    <p class="text-white fs-5 mb-4">Plot reservation, Seed Bank, Volunteer scheduling & Gift-Economy marketplace — all in one platform.</p>
+                                    <a href="plot-mapping.html" class="btn btn-primary py-sm-3 px-sm-4 me-3">Explore Features</a>
+                                    <a href="flash-trade.html" class="btn btn-outline-light py-sm-3 px-sm-4">Marketplace</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Garden">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7">
+                                    <h1 class="display-2 text-white mb-4 animated slideInDown">Manage Your Community Garden Smarter</h1>
+                                    <a href="#modules" class="btn btn-primary py-sm-3 px-sm-4">Discover Modules</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="container-fluid top-feature py-5 pt-lg-0">
+        <div class="container py-5 pt-lg-0">
+            <div class="row gx-0">
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height:160px">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-map-marked-alt text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>42 Functions</h4>
+                                <span>Across 4 core modules</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height:160px">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-users text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>4 Actor Roles</h4>
+                                <span>Plot Owner, Member, Admin, Warden</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height:160px">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-seedling text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>Gift Economy</h4>
+                                <span>Karma points & surplus trading</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modules Overview -->
+    <div class="container-xxl py-5" id="modules">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp mb-5" style="max-width:600px">
+                <p class="fs-5 fw-bold text-primary">Core Modules</p>
+                <h1 class="display-5">Four Modules, One Ecosystem</h1>
+            </div>
+            <div class="row g-4">
+                <!-- Module A -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="fn-card card h-100">
+                        <div class="fn-card card-header text-center" style="background:#348E38">
+                            <i class="fas fa-map fa-2x mb-2"></i><br>
+                            <strong>Land & Allotment</strong>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-muted small mb-3">Handles geospatial plot mapping, rental contracts, and soil quality history.</p>
+                            <ul class="list-unstyled small">
+                                <li><a href="plot-mapping.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Geospatial Plot Mapping</a></li>
+                                <li><a href="rental-billing.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Tiered Rental Billing</a></li>
+                                <li><a href="soil-health.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Soil Health Tracker</a></li>
+                                <li><a href="plot-waitlist.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Plot Waitlist</a></li>
+                                <li><a href="lease-renewal.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Lease Renewal</a></li>
+                                <li><a href="pest-alert.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Pest Alert</a></li>
+                                <li><a href="compliance-audit.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Compliance Audit</a></li>
+                                <li><a href="compost-tracker.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Compost Tracker</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Module B -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="fn-card card h-100">
+                        <div class="fn-card card-header text-center" style="background:#534AB7">
+                            <i class="fas fa-seedling fa-2x mb-2"></i><br>
+                            <strong>Seed Bank & Tools</strong>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-muted small mb-3">Manages shared tools and genetic repository of community seeds.</p>
+                            <ul class="list-unstyled small">
+                                <li><a href="seed-viability.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Seed Viability Tracker</a></li>
+                                <li><a href="tool-maintenance.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Tool Maintenance</a></li>
+                                <li><a href="maintenance-trigger.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Usage-Based Trigger</a></li>
+                                <li><a href="resource-conflict.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Conflict Resolver</a></li>
+                                <li><a href="tool-damage.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Damage Liability</a></li>
+                                <li><a href="inventory-monitor.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Inventory Monitor</a></li>
+                                <li><a href="media-linkage.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Instructional Media</a></li>
+                                <li><a href="late-return.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Late Return Penalty</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Module C -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="fn-card card h-100">
+                        <div class="fn-card card-header text-center" style="background:#993C1D">
+                            <i class="fas fa-hands-helping fa-2x mb-2"></i><br>
+                            <strong>Volunteer & Ops</strong>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-muted small mb-3">Coordinates communal workdays, maintenance shifts, and site security.</p>
+                            <ul class="list-unstyled small">
+                                <li><a href="task-weighting.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Task Weighting</a></li>
+                                <li><a href="service-hours.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Service Hours Tracker</a></li>
+                                <li><a href="shift-swap.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Shift Substitution</a></li>
+                                <li><a href="emergency-broadcast.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Emergency Broadcast</a></li>
+                                <li><a href="fund-voting.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Fund Voting</a></li>
+                                <li><a href="security-log.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Security Log</a></li>
+                                <li><a href="incident-reporting.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Incident Reporting</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Module D -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="fn-card card h-100">
+                        <div class="fn-card card-header text-center" style="background:#854F0B">
+                            <i class="fas fa-store fa-2x mb-2"></i><br>
+                            <strong>Marketplace</strong>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-muted small mb-3">Peer-to-peer exchange for trading organic produce and gardening advice.</p>
+                            <ul class="list-unstyled small">
+                                <li><a href="flash-trade.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Flash Trade Logic</a></li>
+                                <li><a href="gift-economy.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Gift-Economy Credits</a></li>
+                                <li><a href="allergy-guard.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Allergy Guard</a></li>
+                                <li><a href="p2p-advice.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>P2P Advice Exchange</a></li>
+                                <li><a href="quality-rating.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Quality Verification</a></li>
+                                <li><a href="rbac.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>Role-Based Access</a></li>
+                                <li><a href="audit-trail.html" class="text-primary"><i class="fa fa-chevron-right me-1"></i>System Audit Trail</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="display-4 text-white" data-toggle="counter-up">31</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Active Functions</span>
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <h1 class="display-4 text-white" data-toggle="counter-up">4</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Core Modules</span>
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-4 text-white" data-toggle="counter-up">4</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Actor Roles</span>
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                    <h1 class="display-4 text-white" data-toggle="counter-up">33</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Classes Designed</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4"><i class="fas fa-leaf me-2"></i>GardenSystem</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Garden Lane, Cairo, EG</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>None</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@gardensystem.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Land & Allotment</h4>
+                    <a class="btn btn-link" href="plot-mapping.html">Geospatial Plot Mapping</a>
+                    <a class="btn btn-link" href="rental-billing.html">Tiered Rental Billing</a>
+                    <a class="btn btn-link" href="soil-health.html">Soil Health Tracker</a>
+                    <a class="btn btn-link" href="pest-alert.html">Pest & Disease Alert</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="flash-trade.html">Marketplace</a>
+                    <a class="btn btn-link" href="shift-swap.html">Volunteer Shifts</a>
+                    <a class="btn btn-link" href="audit-trail.html">Audit Trail</a>
+                    <a class="btn btn-link" href="rbac.html">Access Control</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Newsletter</h4>
+                    <p>Stay updated with garden news and events.</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5" type="email" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">&copy; <a class="border-bottom" href="#">Community Garden System</a>, All Rights Reserved.</div>
+                <div class="col-md-6 text-center text-md-end">Built on <a class="border-bottom" href="https://htmlcodex.com">Gardener Template</a></div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

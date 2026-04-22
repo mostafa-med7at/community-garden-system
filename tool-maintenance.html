@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Tool Maintenance State Machine - Community Garden System</title><meta content="width=device-width, initial-scale=1.0" name="viewport"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"><link href="lib/animate/animate.min.css" rel="stylesheet"><link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/style.css" rel="stylesheet"><link href="css/garden-custom.css" rel="stylesheet"></head><body><div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"><div class="spinner-border text-primary" role="status" style="width:3rem;height:3rem;"></div></div><div class="container-fluid bg-dark text-light px-0 py-2"><div class="row gx-0 d-none d-lg-flex"><div class="col-lg-7 px-5 text-start"><div class="h-100 d-inline-flex align-items-center"><span class="far fa-envelope me-2"></span><span>info@gardensystem.com</span></div></div></div></div><nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0"><a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5"><h1 class="m-0 text-primary"><i class="fas fa-leaf me-2"></i>GardenSystem</h1></a><button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarCollapse"><div class="navbar-nav ms-auto p-4 p-lg-0"><a href="index.html" class="nav-item nav-link">Home</a><div class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Land &amp; Allotment</a><div class="dropdown-menu bg-light m-0"><a href="plot-mapping.html" class="dropdown-item">1. Plot Mapping</a><a href="rental-billing.html" class="dropdown-item">2. Rental Billing</a><a href="soil-health.html" class="dropdown-item">3. Soil Health</a><a href="plot-waitlist.html" class="dropdown-item">4. Plot Waitlist</a><a href="lease-renewal.html" class="dropdown-item">7. Lease Renewal</a><a href="pest-alert.html" class="dropdown-item">8. Pest Alert</a><a href="compliance-audit.html" class="dropdown-item">9. Compliance Audit</a><a href="compost-tracker.html" class="dropdown-item">10. Compost Tracker</a></div></div><div class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Seed Bank &amp; Tools</a><div class="dropdown-menu bg-light m-0"><a href="seed-viability.html" class="dropdown-item">12. Seed Viability</a><a href="tool-maintenance.html" class="dropdown-item">14. Tool Maintenance</a><a href="maintenance-trigger.html" class="dropdown-item">15. Usage Trigger</a><a href="resource-conflict.html" class="dropdown-item">16. Conflict Resolver</a><a href="tool-damage.html" class="dropdown-item">17. Tool Damage</a><a href="inventory-monitor.html" class="dropdown-item">19. Inventory Monitor</a><a href="media-linkage.html" class="dropdown-item">21. Instructional Media</a><a href="late-return.html" class="dropdown-item">22. Late Return Penalty</a></div></div><div class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Volunteer &amp; Ops</a><div class="dropdown-menu bg-light m-0"><a href="task-weighting.html" class="dropdown-item">23. Task Weighting</a><a href="service-hours.html" class="dropdown-item">25. Service Hours</a><a href="shift-swap.html" class="dropdown-item">26. Shift Swap</a><a href="emergency-broadcast.html" class="dropdown-item">27. Emergency Broadcast</a><a href="fund-voting.html" class="dropdown-item">28. Fund Voting</a><a href="security-log.html" class="dropdown-item">29. Security Log</a><a href="incident-reporting.html" class="dropdown-item">31. Incident Reporting</a></div></div><div class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Marketplace</a><div class="dropdown-menu bg-light m-0"><a href="flash-trade.html" class="dropdown-item">33. Flash Trade</a><a href="gift-economy.html" class="dropdown-item">34. Gift Credits</a><a href="allergy-guard.html" class="dropdown-item">36. Allergy Guard</a><a href="p2p-advice.html" class="dropdown-item">37. P2P Advice</a><a href="quality-rating.html" class="dropdown-item">38. Quality Rating</a><a href="rbac.html" class="dropdown-item">40. RBAC</a><a href="audit-trail.html" class="dropdown-item">41. Audit Trail</a></div></div></div></div></nav><div class="page-header text-center py-5"><div class="container"><div class="d-inline-flex align-items-center justify-content-center mb-3" style="width:80px;height:80px;background:rgba(255,255,255,.15);border-radius:50%"><i class="fas fa-tools fa-2x text-white"></i></div><p class="text-uppercase fw-bold mb-1" style="color:#7BC47F;letter-spacing:2px">Seed Bank & Tools &middot; Function 14</p><h1 class="text-white display-5 mb-3">Tool Maintenance State Machine</h1><nav aria-label="breadcrumb"><ol class="breadcrumb justify-content-center mb-0"><li class="breadcrumb-item"><a href="index.html">Home</a></li><li class="breadcrumb-item active">Tool Maintenance State Machine</li></ol></nav></div></div><div class="container-xxl py-5"><div class="container">
+<div class="row g-4 mb-4">
+<div class="col-md-3"><div class="alert-garden p-4 rounded h-100"><h5 class="text-primary mb-2"><i class="fas fa-info-circle me-2"></i>Function Overview</h5><p class="mb-0 small">Tool Maintenance State Machine — part of the Seed Bank & Tools module. Tracks and manages key operational data for the community garden.</p></div></div>
+<div class="col-md-3"><div class="stat-card bg-white text-center"><div class="stat-number">14</div><p class="stat-label">Function Number</p></div></div>
+<div class="col-md-3"><div class="stat-card bg-white text-center"><div class="stat-number">24</div><p class="stat-label">Total Records</p></div></div>
+<div class="col-md-3"><div class="stat-card bg-white text-center"><div class="stat-number">3</div><p class="stat-label">Pending Actions</p></div></div>
+</div>
+<div class="row g-4">
+<div class="col-lg-8">
+<div class="fn-card card mb-4">
+<div class="card-header fn-card" style="background:#348E38"><i class="fas fa-table me-2"></i>Tool Maintenance State Machine — Records</div>
+<div class="card-body">
+<div class="mb-3 d-flex gap-2 flex-wrap">
+<input type="text" class="form-control form-control-sm" style="max-width:220px" placeholder="Search records...">
+<select class="form-select form-select-sm" style="max-width:140px"><option>All Status</option><option>Active</option><option>Pending</option><option>Completed</option></select>
+<button class="btn btn-sm btn-outline-primary"><i class="fas fa-filter me-1"></i>Filter</button>
+<button class="btn btn-sm btn-primary ms-auto"><i class="fas fa-download me-1"></i>Export CSV</button>
+</div>
+<div class="table-responsive">
+<table class="table table-garden table-hover">
+<thead><tr><th>ID</th><th>Name / Title</th><th>Date</th><th>Value / Note</th><th>Status</th><th>Actions</th></tr></thead>
+<tbody>
+<tr><td>#14-001</td><td>Entry Alpha</td><td>2026-04-01</td><td>Nominal</td><td><span class="status-badge status-active">Active</span></td><td><button class="btn btn-sm btn-outline-primary me-1">Edit</button><button class="btn btn-sm btn-outline-danger">Del</button></td></tr>
+<tr><td>#14-002</td><td>Entry Beta</td><td>2026-04-05</td><td>High Priority</td><td><span class="status-badge status-pending">Pending</span></td><td><button class="btn btn-sm btn-outline-primary me-1">Edit</button><button class="btn btn-sm btn-outline-danger">Del</button></td></tr>
+<tr><td>#14-003</td><td>Entry Gamma</td><td>2026-04-10</td><td>Low Impact</td><td><span class="status-badge status-active">Completed</span></td><td><button class="btn btn-sm btn-outline-primary me-1">Edit</button><button class="btn btn-sm btn-outline-danger">Del</button></td></tr>
+<tr><td>#14-004</td><td>Entry Delta</td><td>2026-04-12</td><td>Critical</td><td><span class="status-badge status-expired">Expired</span></td><td><button class="btn btn-sm btn-outline-primary me-1">Edit</button><button class="btn btn-sm btn-outline-danger">Del</button></td></tr>
+</tbody>
+</table>
+</div>
+<nav><ul class="pagination pagination-sm justify-content-end mt-2 mb-0">
+<li class="page-item disabled"><a class="page-link">Previous</a></li>
+<li class="page-item active"><a class="page-link">1</a></li>
+<li class="page-item"><a class="page-link">2</a></li>
+<li class="page-item"><a class="page-link">Next</a></li>
+</ul></nav>
+</div>
+</div>
+<div class="fn-card card">
+<div class="card-header fn-card" style="background:#348E38"><i class="fas fa-chart-bar me-2"></i>Activity Overview (Last 4 Weeks)</div>
+<div class="card-body"><div id="actChart14"></div></div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="fn-card card mb-4">
+<div class="card-header fn-card" style="background:#348E38"><i class="fas fa-plus me-2"></i>Add New Record</div>
+<div class="card-body">
+<form class="form-garden" id="form14">
+<div class="mb-3"><label>Title</label><input type="text" class="form-control" placeholder="Record title" required></div>
+<div class="mb-3"><label>Category</label>
+<select class="form-select"><option>Category A</option><option>Category B</option><option>Category C</option></select></div>
+<div class="mb-3"><label>Description</label><textarea class="form-control" rows="3" placeholder="Enter details..."></textarea></div>
+<div class="mb-3"><label>Date</label><input type="date" class="form-control" value="2026-04-22"></div>
+<div class="mb-3"><label>Priority</label>
+<div class="d-flex gap-3">
+<div class="form-check"><input class="form-check-input" type="radio" name="pri14" value="high"><label class="form-check-label text-danger">High</label></div>
+<div class="form-check"><input class="form-check-input" type="radio" name="pri14" value="med" checked><label class="form-check-label text-warning">Medium</label></div>
+<div class="form-check"><input class="form-check-input" type="radio" name="pri14" value="low"><label class="form-check-label text-success">Low</label></div>
+</div></div>
+<div class="mb-3"><label>Assigned To</label><input type="text" class="form-control" placeholder="Member ID or name"></div>
+<button type="submit" class="btn btn-primary w-100"><i class="fas fa-save me-2"></i>Save Record</button>
+</form>
+</div>
+</div>
+<div class="fn-card card">
+<div class="card-header fn-card" style="background:#348E38"><i class="fas fa-history me-2"></i>Recent Activity</div>
+<div class="card-body">
+<div class="timeline">
+<div class="timeline-item"><small class="text-muted">Today 09:12</small><p class="mb-0 small">New record #14-001 created</p></div>
+<div class="timeline-item"><small class="text-muted">Yesterday 14:30</small><p class="mb-0 small">Record #14-003 marked complete</p></div>
+<div class="timeline-item"><small class="text-muted">Apr 20 11:00</small><p class="mb-0 small">Batch export generated (12 records)</p></div>
+<div class="timeline-item"><small class="text-muted">Apr 19 08:45</small><p class="mb-0 small">Auto-reminder sent to 3 members</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  renderBar('actChart14',[{label:'Week 1',value:12},{label:'Week 2',value:18},{label:'Week 3',value:9},{label:'Week 4',value:24}]);
+  document.getElementById('form14').addEventListener('submit',function(e){e.preventDefault();showToast('Record saved successfully!');});
+});
+</script></div></div><div class="container-fluid bg-dark text-light footer mt-5 py-5"><div class="container py-5"><div class="row g-5"><div class="col-lg-3 col-md-6"><h4 class="text-white mb-4"><i class="fas fa-leaf me-2"></i>GardenSystem</h4><p>info@gardensystem.com</p></div><div class="col-lg-3 col-md-6"><h4 class="text-white mb-4">Quick Links</h4><a class="btn btn-link" href="index.html">Home</a><a class="btn btn-link" href="plot-mapping.html">Plot Mapping</a><a class="btn btn-link" href="flash-trade.html">Marketplace</a></div><div class="col-lg-3 col-md-6"><h4 class="text-white mb-4">Modules</h4><a class="btn btn-link" href="soil-health.html">Land &amp; Allotment</a><a class="btn btn-link" href="seed-viability.html">Seed Bank</a><a class="btn btn-link" href="shift-swap.html">Volunteer &amp; Ops</a></div><div class="col-lg-3 col-md-6"><h4 class="text-white mb-4">Contact</h4><p>+012 345 67890</p></div></div></div></div><div class="container-fluid copyright py-4"><div class="container"><div class="row"><div class="col-md-6">&copy; Community Garden System, All Rights Reserved.</div><div class="col-md-6 text-end">Built on <a href="https://htmlcodex.com">Gardener Template</a></div></div></div></div><a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a><script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script><script src="lib/wow/wow.min.js"></script><script src="lib/easing/easing.min.js"></script><script src="lib/waypoints/waypoints.min.js"></script><script src="lib/counterup/counterup.min.js"></script><script src="lib/parallax/parallax.min.js"></script><script src="js/main.js"></script><script src="js/garden-functions.js"></script></body></html>
